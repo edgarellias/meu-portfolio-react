@@ -1,58 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 
 .presentationContainer {
-    padding-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-
-}
-.leftTexts {
-    padding-left: 60px;
-}
-.leftTexts p{
-    font-size: 2em;
-    font-family: 'Special Elite', cursive;
-    border-right: 2px solid white;
-    white-space: nowrap;
-    overflow: hidden;
+	padding-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.typing-animation {
-    animation: blinkCursor 500ms steps(40) infinite normal, typing 4s steps(40) 1s normal both;
-}
-@keyframes typing { 
-    from{
-        width: 0;
-    }
-    to{
-        width: 18em;
-    }
-}
-@keyframes blinkCursor{
-    from {
-        border-right-color: rgba(255,255,255, .75);
-    }
-    to{
-        border-right-color: transparent;
-    }
+.leftTexts p {
+	font-size: 2em;
+	font-family: "Special Elite", cursive;
+	border-right: 2px solid white;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
-.leftTexts span {
-    font-size: 2em;
+.typing-animation:nth-child(1) {
+	width: 10ch;
+	opacity: 0;
+	animation: type 1s steps(40, end) forwards;
+	margin: 0;
+}
+.typing-animation:nth-child(2) {
+	width: 11.5ch;
+	opacity: 0;
+	animation: type 2s steps(40, end) forwards;
+	animation-delay: 1.4s;
+	margin: 8px 0;
+	font-size: 3.5em;
+}
+.typing-animation:nth-child(3) {
+	width: 22ch;
+	opacity: 0;
+	animation: type2 2s steps(60, end) forwards, blink 0.7s step-end infinite alternate;
+	animation-delay: 3.8s;
+	margin: 0;
+}
+@keyframes type {
+	0% {
+		width: 0;
+		opacity: 1;
+	}
+	99% {
+		border-right: 1px solid white;
+	}
+	100% {
+		opacity: 1;
+		border: none;
+	}
+}
+@keyframes type2 {
+	0% {
+		width: 0;
+	}
+	1% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
+}
+
+.leftTexts p {
+	font-size: 2em;
 }
 .leftTexts a {
-    font-size: 2em;
-    width: 60%;
-    text-align: center;
-    margin: 0 auto;
+	font-size: 2em;
+	text-align: center;
+	margin: 20px 0px 0px 60px;
+	/* width: 5em; */
 }
-
+.contactContainer {
+	display: flex;
+}
 
 .rightImg img {
-    border-radius: 250px;
-    width: 500px;
-    height: 500px;
-    padding-right: 40px;
+	border-radius: 50%;
+	width: 380px;
+	height: 380px;
+	
 }
+

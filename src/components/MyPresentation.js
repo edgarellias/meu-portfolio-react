@@ -5,14 +5,19 @@ const MyPresentation = () => {
 	return (
 		<div className="presentationContainer">
 			<div className="leftTexts">
-				<p class="typing-animation">
-					Olá, sou o<span>Edgar Elias</span>
-					sou desenvolvedor front-end
-				</p>
-				{/* <a href="https://www.linkedin.com/in/edgar-elias-997571205/" target="_blank">
-					CONTATE-ME
-				</a> */}
+				<p className="typing-animation">Olá, sou o </p>
+				<p className="typing-animation">Edgar Elias</p>
+				<p className="typing-animation">desenvolvedor front-end</p>
+				<div className="contactContainer">
+				<a href="https://www.linkedin.com/in/edgar-elias-997571205/" target="_blank">
+					LinkedIn
+				</a>
+				<a href="https://drive.google.com/file/d/1yL241bC5v1f2CDAasnF5D93bVm-xXP7e/view?usp=sharing" target="_blank">
+					Currículo
+				</a>
+				</div>
 			</div>
+			
 			<div className="rightImg">
 				<img src={programming} alt="Homem Programando" />
 			</div>

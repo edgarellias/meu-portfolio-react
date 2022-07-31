@@ -1,0 +1,36 @@
+.mainContainer {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.cardsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 30px;
+    height: 250px;
+}
+
+.cardsContainer svg{
+    width: 100px;
+    height: 100px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 4px solid rgba(255, 0, 0, 0.468);
+}
+.card:hover {
+    box-shadow: rgba(246, 44, 44, 0.987) -5px 5px, rgba(240, 46, 46, 0.474) -10px 10px, rgba(243, 76, 76, 0.377) -15px 15px;
+    transition: 1s;
+    background-color: rgba(255, 0, 0, 0.33); 
+}
+
+svg:hover {
+    font-size: 30px;
+}

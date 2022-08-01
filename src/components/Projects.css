@@ -1,0 +1,34 @@
+
+.fullContainer {
+    margin-top: 30px;
+    text-align: center;
+}
+.cardProjectContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.cardProject {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+    border: 4px solid rgba(225, 225, 225, 0.772);
+    border-radius: 15px;
+    width: 200px;
+    height: 280px;
+    text-align: center;
+}
+.cardProject p {
+    text-align: center;
+    word-break: break-all;
+}
+
+.cardProject img {
+    border-radius: 10%;
+    width: 9rem;
+    height: 9rem;
+}

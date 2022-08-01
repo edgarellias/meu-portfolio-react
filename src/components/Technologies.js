@@ -6,9 +6,10 @@ const Technologies = () => {
 			<h3>Tecnologias que trabalho: </h3>
 			<div className="cardsContainer">
 				{TechnologiesData.map((tech) => (
-					<div className="card"  key={tech.id}>
+					<div className="cardTech"  key={tech.id}>
 						{tech.icon}
 						{tech.name}
+						
 					</div>
 				))}
 			</div>

@@ -10,12 +10,11 @@
     flex-wrap: wrap;
     padding: 30px;
     gap: 30px;
-    height: 250px;
 }
 
 .cardsContainer svg{
     width: 100px;
-    height: 100px;
+    height: 50%;
 }
 .cardTech {
     display: flex;

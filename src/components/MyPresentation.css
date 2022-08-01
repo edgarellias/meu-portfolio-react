@@ -74,7 +74,6 @@
 	font-size: 2em;
 	text-align: center;
 	margin: 20px 0px 0px 60px;
-	/* width: 5em; */
 }
 .contactContainer {
 	display: flex;
@@ -83,7 +82,7 @@
 .rightImg img {
 	border-radius: 50%;
 	width: 380px;
-	height: 380px;
+	height: 380px; 
 	
 }
 

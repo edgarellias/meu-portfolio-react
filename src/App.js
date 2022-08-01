@@ -5,6 +5,8 @@ import MyPresentation from './components/MyPresentation';
 import NavBar from './components/NavBar';
 import Projects from './components/Projects';
 import Technologies from './components/Technologies';
+import Footer from './components/Footer';
+
 function App() {
   
   return (
@@ -13,6 +15,7 @@ function App() {
       <MyPresentation />
       <Technologies />
       <Projects />
+      <Footer />
     </div>
   );
 }

@@ -6,6 +6,7 @@ import NavBar from './components/NavBar';
 import Projects from './components/Projects';
 import Technologies from './components/Technologies';
 import Footer from './components/Footer';
+import Contacts from './components/Contacts';
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
       <MyPresentation />
       <Technologies />
       <Projects />
+      <Contacts />
       <Footer />
     </div>
   );

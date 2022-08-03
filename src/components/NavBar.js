@@ -1,6 +1,5 @@
 import "./NavBar.css";
 import { FaReact } from "react-icons/fa";
-import MyPresentation from "./MyPresentation";
 
 const NavBar = () => {
 	return (
@@ -11,16 +10,16 @@ const NavBar = () => {
 			<div className="navItens">
 				<ul >
 					<li>
-						<a href={MyPresentation} >Início</a>
+						<a href="#">Início</a>
 					</li>
 					<li>
-						<a href="" >Tecnologias</a>
+						<a href="#">Tecnologias</a>
 					</li>
 					<li>
-						<a href="" >Projetos</a>
+						<a href="#" >Projetos</a>
 					</li>
 					<li>
-						<a href="" >Contatos</a>
+						<a href="#" >Contatos</a>
 					</li>
 				</ul>
 			</div>

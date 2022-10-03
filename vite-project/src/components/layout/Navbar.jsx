@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
-import { SiReact } from "react-icons/si";
 
 import { dbNavbar } from "../database/dbNavbar";
 import { dbName } from "../database/dbName";
@@ -110,6 +109,7 @@ const List = styled.ul`
 	gap: 30px;
 	align-items: center;
 	font-size: 1.5rem;
+	
 	@media screen and (max-width: 768px) {
 		flex-direction: column;
 		width: 80%;

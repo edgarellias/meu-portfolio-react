@@ -6,13 +6,13 @@ export const dbNavbar = [
 	},
 	{
 		id: 2,
-		title: "Projetos",
-		to: "/projetos",
+		title: "Tecnologias",
+		to: "/tecnologias",
 	},
 	{
 		id: 3,
-		title: "Tecnologias",
-		to: "/tecnologias",
+		title: "Projetos",
+		to: "/projetos",
 	},
 	{
 		id: 4,

@@ -18,9 +18,7 @@ export const Navbar = () => {
 			<Profile>
 				{dbName.map((item) => (
 					<li key={item.id}>
-						<p>{item.tag}</p>
-						<p>{item.name}</p>
-						<p>{item.lastName}</p>
+						<NavLink to={item.to}>{item.tag}</NavLink>
 					</li>
 				))}
 			</Profile>
@@ -81,26 +79,11 @@ const Profile = styled.ul`
 		display: flex;
 		gap: 10px;
 		align-items: center;
-		p:nth-child(1){
-			font-size: 2.1rem;
+		> a {
+			text-decoration: none;
+			color: #32abf1;
+			font-weight: 800;
 		}
-		p:last-child {
-			display: none;
-		}
-	}
-
-	@media screen and (min-width: 768px) {
-		> li {
-
-			> p:nth-child(1){
-				font-size: 2.5rem;
-				margin-right: 20px;
-			}
-
-			> p:last-child{
-				display: inline;
-			}
-		}	
 	}
 `;
 
@@ -118,6 +101,7 @@ const Shadow = styled.div`
 
 	@media screen and (min-width: 768px) {
 		display: none;
+		f
 	}
 `;
 
@@ -126,7 +110,7 @@ const List = styled.ul`
 	list-style: none;
 	gap: 30px;
 	align-items: center;
-
+	font-size: 1.5rem;
 	@media screen and (max-width: 768px) {
 		flex-direction: column;
 		width: 80%;

@@ -11,6 +11,8 @@ body,
 #root {
   background-color: #1e1d1d;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 ::-webkit-scrollbar {

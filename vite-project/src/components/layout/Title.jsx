@@ -9,7 +9,7 @@ const Container = styled.div`
 	color: #32abf1;
     
     h1 {
-        padding: 25px 0;
+        padding: 50px 0;
         font-size: 2.5rem;
     }
     
